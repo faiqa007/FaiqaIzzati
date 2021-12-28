@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Faiqa Izzati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c349deab8b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="homepage">
+    <nav>
+      <div class="header">
+        <span class="line-1"></span>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#porfolio">Porfolio</a></li>
+          </ul>
+        </div>
+        <span class="line-1"></span>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="container-1">
+      <h1>FAIQA IZZATI</h1>
+      <p>Front-end Developer & Digital Designer</p>
+    </div>
+    <div class="container-2">
+      <a href="mailto: ifaiqa@gmail.com"> <img src="images/email-icon-color.png"></a>
+      <a href="https://www.instagram.com/faiqa_izzati/" target="_blank"> <img src="images/instagram-icon-color.png"></a>
+      <a href="https://www.linkedin.com/" target="_blank"> <img src="images/linkedin-icon-color.png"></a>
+      <a href="https://web.whatsapp.com/" target="_blank"> <img src="images/whatsapp-icon-color.png"></a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-content-1">
+      <div class="header">
+        <span class="line-1"></span>
+        <span class="line-1"></span>
+      </div>
+      <div class="profile">
+        <img class="profile-photo" src="images/profile.png" alt="profile">
+      </div>
+      <div class="about-text">
+        <h2 class="title">ABOUT</h2>
+        <!-- <h2 class="title">ABOUT ME</h2> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORFOLIO -->
+  <section id="porfolio">
+    <div class="portfolio-1">
+      <div class="header">
+        <span class="line-1"></span>
+        <span class="line-1"></span>
+      </div>
+      <h2 class="title">PORTFOLIO</h2>
+      <div class="row">
+        <div class="card-row">
+          <div class="card">
+            <a href="#"><img src="images/pic-7.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href="#"><img src="images/pic-7.jpg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href="#"><img src="images/pic-7.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="mailto: ifaiqa@gmail.com" method="post" enctype="text/plain">
+          <input type="text" class="contact-form-text" placeholder="Your name">
+          <input type="email" class="contact-form-text" placeholder="Your email">
+          <input type="text" class="contact-form-text" placeholder="Your phone">
+          <textarea class="contact-form-text" placeholder="Your message"></textarea>
+          <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+    </div>
+    <div class="logo">
+      <img src="images/official-logo-white.png" alt="">
+    </div>
+    <div class="copyright">
+      <p>faiqaizzati00@gmail.com</p>
+      <p>Copyright @ Faiqa Izzati</p>
+    </div>
+  </div>
+</body>
+
+<!-- JAVASCRIPT -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-100%";
+  }
+</script>
+
+</html>
